@@ -1,0 +1,88 @@
+body {
+	width: 300px;
+	margin: 0;
+	padding: 10px;
+	background: #444444;
+	border: 1px solid #222222;
+	color: #d9d9d9;
+}
+
+.spacer {
+	width: 100%;
+	height: 30px;
+}
+.center {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+p {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+ul {
+	max-height: 150px;
+	list-style-type: "👤";
+	list-style-position: outside;
+	margin: 12px;
+	padding-left: 10px;
+	font-size: 18px;
+	overflow: auto;
+}
+li {
+	margin-left: 10px;
+}
+li span {
+	margin-left: 5px;
+}
+li button {
+	margin-left: 5px;
+}
+a {
+	color: #32d6cd;
+}
+#buttons {
+	display: flex;
+	justify-content: space-evenly;
+}
+#buttons button {
+	display: inline-block;
+	width: calc(50% - 20px);
+	background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color: #7892c2;
+	border-radius: 12px;
+	outline: none;
+	border: 1px solid #4e6096;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 10px 24px;
+}
+#buttons button:hover {
+	background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color: #476e9e;
+}
+#winner, #error {
+	display: none;
+}
+#listNamesHeader {
+	padding-left: 10px;
+	display: none;
+}
+button.delBtn {
+	background: linear-gradient(to bottom, #b66262 5%, #a33030 100%);
+	background-color: #b66262;
+	border-radius: 6px;
+	outline: none;
+	border: 1px solid #742020;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+button.delBtn:hover {
+	background: linear-gradient(to bottom, #a33030 5%, #b66262 100%);
+	background-color: #a33b3b;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hostgier Dark Theme</title>
+		<link rel="stylesheet" href="popup.css">
+	</head>
+	<body>
+		<h2 class="center">🎉 Easy Giveaway 🎉</h2>
+		<h3 class="center">By <a href="https://discord.com/users/617421492744880159" target="_blank">THEzombiePL#2308</a></h3>
+		<p>Zaznacz tekst (zazwyczaj imię i nazwisko osoby), a następni wciśnij <code id="addUserCmd"></code>, aby dodać wybraną osobę do listy.</p>
+		<p>Wciśnij <code id="clearListCmd"></code> dwukrotnie w ciągu 5s, aby wyczyścić listę.</p>
+		<div class="spacer"></div>
+		<div id="buttons">
+			<button id="getNames">Pokaż listę</button>
+		</div>
+		<h2 id="error" class="center"></h2>
+		<h2 id="winner" class="center">Zwycięzca: jeszcze nie wylosowano</h2>
+		<br>
+		<h3 id="listNamesHeader">Lista użytkowników:</h3>
+		<ul id="listNames">
+		</ul>
+		<script src="popup.js" type="module"></script>
+	</body>
+</html>

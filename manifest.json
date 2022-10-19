@@ -1,0 +1,32 @@
+{
+    "name" : "Easy Giveaway",
+    "version" : "1.0.0",
+    "description" : "Wtyczka, która umożliwi ci w łatwy sposób przeprowadzić giveaway.",
+    "icons": {
+        "16": "giveaway.png",
+        "48": "giveaway.png",
+        "128": "giveaway.png"
+    },
+    "action" : {
+        "default_icon" : "giveaway.png",
+        "default_title": "Easy Giveaway",
+        "default_popup": "popup.html"
+    },
+    "manifest_version" : 3,
+    "permissions": ["activeTab", "scripting", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "commands": {
+        "clearList": {
+            "suggested_key": "Ctrl+Shift+D",
+            "description": "Wyczyść listę użytkowników"
+        },
+        "addUser": {
+            "suggested_key": "Ctrl+Shift+F",
+            "description": "Dodaj użytkownika"
+        }
+    }
+}
