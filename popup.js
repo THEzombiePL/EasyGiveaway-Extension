@@ -1,5 +1,5 @@
 import { getLocal, saveLocal } from './storage.js';
-import { getRandomInt } from './util.js';
+import { getRandomInt, escapeHTML } from './util.js';
 
 chrome.commands.getAll(commands => {
 	document.getElementById('addUserCmd').innerText = commands.find(cmd => cmd.name === 'addUser')?.shortcut;
@@ -18,7 +18,7 @@ async function loaditems() {
 	listNames.innerHTML = '';
 	if (names) {
 		names.forEach((name, i) => {
-			listNames.innerHTML += `<li><span>${name}</span><button class="delBtn" data-delete="${i}">usuń</button></li>`; 
+			listNames.innerHTML += `<li><span>${escapeHTML(name)}</span><button class="delBtn" data-delete="${i}">usuń</button></li>`; 
 		});
 		document.querySelectorAll('.delBtn')?.forEach(btn => {
 			btn.addEventListener('click', e => {

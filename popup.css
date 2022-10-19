@@ -30,7 +30,8 @@ ul {
 	margin: 12px;
 	padding-left: 10px;
 	font-size: 18px;
-	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 li {
 	margin-left: 10px;
