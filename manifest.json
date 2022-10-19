@@ -1,7 +1,7 @@
 {
     "name" : "Easy Giveaway",
     "description" : "Wtyczka, która umożliwi ci w łatwy sposób przeprowadzić giveaway.",
-    "version" : "1.0.0",
+    "version" : "1.0.1",
     "manifest_version" : 3,
     "permissions": ["activeTab", "scripting", "storage"],
     "host_permissions": ["<all_urls>"],
