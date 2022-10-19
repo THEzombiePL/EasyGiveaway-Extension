@@ -15,8 +15,11 @@ chrome.commands.onCommand.addListener(async (command) => {
 		}
 		if (!result.length || result === " ") return;
 
-		const {names} = await getLocal('names');
-		if (!names) saveLocal('names', []);
+		let {names} = await getLocal('names');
+		if (!names) {
+			names = [];
+			await saveLocal('names', names);
+		}
 
 		names.push(result);
 		saveLocal('names', names);
